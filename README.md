@@ -10,6 +10,7 @@ A Bash script that analyzes `system.log` and `application.log` by:
 * Detecting `ERROR`, `CRITICAL`, `FATAL`, `WARNING`, and `EXCEPTION` tags
 * Counting occurrences
 * Displaying the relevant log entries
+* Snapshots of Analyzer by 'System log Analysis.png' and 'Application Log Analysis.png'
 
 **Concepts used:** Variables, Arrays, Loops, Conditions, Functions, `grep`, Command Substitution, and File Handling.
 
