@@ -1,0 +1,93 @@
+============================================================
+              SYSTEM HEALTH CHECKER & ANALYZER
+============================================================
+
+-------------------- SYSTEM INFORMATION --------------------
+Hostname       : kali
+Operating System: Kali GNU/Linux Rolling
+Kernel         : 6.18.12+kali-amd64
+Architecture   : x86_64
+Uptime         : up 1 minute
+
+-------------------- CPU ANALYSIS --------------------
+CPU Usage      : 17%
+CPU Status     : HEALTHY
+CPU Cores      : 2
+Load Average   : 0.37 0.16 0.06
+
+-------------------- MEMORY ANALYSIS --------------------
+Total Memory   : 1971 MB
+Used Memory    : 797 MB
+Free Memory    : 507 MB
+Memory Usage   : 40%
+Memory Status  : HEALTHY
+
+-------------------- DISK ANALYSIS --------------------
+/                         79G        16G        59G        21%       
+/run/credentials/systemd-journald.service 1.0M       0          1.0M       0%        
+/run/credentials/getty@tty1.service 1.0M       0          1.0M       0%        
+
+Root Disk Usage : 21%
+Disk Status     : HEALTHY
+
+-------------------- SYSTEM LOAD ANALYSIS --------------------
+awk: fatal: cannot use gawk builtin `load' as variable name
+1 Minute Load  : 0.37
+CPU Cores      : 2
+Estimated Load : %
+Load Status    : HEALTHY
+
+-------------------- TOP CPU PROCESSES --------------------
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         641  4.2  8.4 500880 170688 tty7    Ssl+ 10:48   0:03 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root          39  1.6  0.0      0     0 ?        I    10:48   0:01 [kworker/u9:1-events_unbound]
+kali        1974  1.6  3.4 664124 69776 ?        Rl   10:48   0:00 /usr/bin/qterminal
+kali        2018  1.5  0.3  10352  6732 pts/0    Ss   10:49   0:00 /usr/bin/zsh
+kali        1086  1.1  6.6 1180708 133604 ?      Sl   10:48   0:00 xfwm4
+
+-------------------- TOP MEMORY PROCESSES --------------------
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         641  4.2  8.4 500880 170688 tty7    Ssl+ 10:48   0:03 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+kali        1086  1.1  6.6 1180708 133604 ?      Sl   10:48   0:00 xfwm4
+kali        1974  1.6  3.4 664124 69776 ?        Sl   10:48   0:00 /usr/bin/qterminal
+kali        1457  0.7  3.1 610552 63432 ?        Sl   10:48   0:00 /usr/bin/python3 /usr/bin/blueman-applet
+kali        1150  0.9  3.1 1123972 63024 ?       Sl   10:48   0:00 xfdesktop
+
+-------------------- NETWORK ANALYSIS --------------------
+Internet Status : CONNECTED
+
+Network Interfaces:
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             10.0.2.15/24 fd17:625c:f037:2:cbb0:5a66:9ac5:be05/64 fe80::9341:6d69:6700:e448/64 
+
+-------------------- SERVICE ANALYSIS --------------------
+ssh : NOT RUNNING
+cron : RUNNING
+docker : NOT INSTALLED
+
+-------------------- STORAGE ANALYSIS --------------------
+Largest directories under /home:
+23M     /home/kali
+23M     /home
+18M     /home/kali/.mozilla/firefox/8gaduoy0.default-esr
+18M     /home/kali/.mozilla/firefox
+18M     /home/kali/.mozilla
+
+-------------------- HEALTH SUMMARY --------------------
+Checking overall system condition...
+
+[OK] CPU usage is normal.
+[OK] Memory usage is normal.
+[OK] Root disk usage is normal.
+
+Overall System Status : HEALTHY
+
+============================================================
+              HEALTH CHECK COMPLETED
+============================================================
+
+Report saved to:
+reports/health_report_2026-09-21_10-49-42.log
+
+Generated at:
+Mon Sep 21 10:49:43 AM EDT 2026
